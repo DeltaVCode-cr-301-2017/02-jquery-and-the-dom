@@ -20,7 +20,7 @@ Article.prototype.toHtml = function() {
   However, in our modules.css stylesheet, we gave all elements
   with a class of template a display of none. Let's make
   sure we're not accidentally hiding our cloned article! */
-  $('.template').css('display', 'block');
+  $('article').toggleclass('display', 'block');
 
 
   if (!this.publishedOn) $newArticle.addClass('draft');
