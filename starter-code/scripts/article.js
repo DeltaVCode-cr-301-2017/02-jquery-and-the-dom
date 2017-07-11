@@ -19,6 +19,8 @@ Article.prototype.toHtml = function() {
   $newArticle.data('category', this.category);
 
   console.log($newArticle)
+  $newArticle.find('h1').text(this.title);
+  $newArticle.find('.byline address a').text(this.author).attr( 'href', this.authorUrl);
   /* TODO: Now use jQuery traversal and setter methods to fill in the rest
   of the current template clone with properties from this particular Article instance.
   We need to fill in:
