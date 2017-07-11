@@ -51,6 +51,10 @@
   font-weight: bold;
   text-decoration: none;
 }
+.pubDate{
+  font-style: italic;
+  color: darkgray;
+}
 
 @media only screen and (min-width: 640px) {
   .icon-menu {
